@@ -5698,6 +5698,12 @@ en:
       share: "Share"
       dismiss: "Dismiss"
 
+    tab_bar:
+      aria_label: "Main navigation"
+      forum: "Forum"
+      placeholder: "Top"
+      placeholder_content: "Coming soon..."
+
     safe_mode:
       enabled: "Safe mode is enabled, to exit safe mode close this browser window"
 
@@ -6044,7 +6050,7 @@ en:
           copy: "Copy..."
           paste: "Paste..."
           save: "Save as..."
-    powered_by_discourse: "Powered by Discourse"
+    powered_by_discourse: "Powered by Vabes"
     safari_15_warning: "Your browser will soon be incompatible with this community. To keep participating here, please upgrade your browser or <a href='%{url}'>learn more</a>."
 
     filter:
