@@ -1,4 +1,6 @@
 import Component from "@glimmer/component";
+import { on } from "@ember/modifier";
+import { action } from "@ember/object";
 import { LinkTo } from "@ember/routing";
 import { service } from "@ember/service";
 import concatClass from "discourse/helpers/concat-class";
@@ -13,6 +15,11 @@ export default class TabBar extends Component {
     return this.router.currentRouteName?.startsWith("second-tab");
   }
 
+  @action
+  hapticFeedback() {
+    window.Telegram?.WebApp?.HapticFeedback?.selectionChanged();
+  }
+
   <template>
     {{htmlClass "tab-bar-visible"}}
     <nav class="tab-bar" aria-label={{i18n "tab_bar.aria_label"}}>
@@ -24,6 +31,7 @@ export default class TabBar extends Component {
           (unless this.isSecondTabActive "tab-bar__tab--active")
         }}
         aria-current={{unless this.isSecondTabActive "page"}}
+        {{on "click" this.hapticFeedback}}
       >
         {{icon "comments"}}
         <span class="tab-bar__tab-label">{{i18n "tab_bar.forum"}}</span>
@@ -36,6 +44,7 @@ export default class TabBar extends Component {
           (if this.isSecondTabActive "tab-bar__tab--active")
         }}
         aria-current={{if this.isSecondTabActive "page"}}
+        {{on "click" this.hapticFeedback}}
       >
         {{icon "layer-group"}}
         <span class="tab-bar__tab-label">{{i18n "tab_bar.placeholder"}}</span>

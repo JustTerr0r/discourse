@@ -10,6 +10,7 @@
     <%- if GlobalSetting.early_hint_header_mode == "prefetch" %>
       <%= render partial: "common/discourse_preload_stylesheet" %>
     <%- end %>
+    <script src="https://telegram.org/js/telegram-web-app.js" nonce="<%= csp_nonce_placeholder %>"></script>
     <%= render partial: "layouts/head" %>
     <%= discourse_csrf_tags %>
 
