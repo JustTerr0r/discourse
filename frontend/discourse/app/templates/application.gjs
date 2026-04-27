@@ -24,7 +24,6 @@ import PwaInstallBanner from "discourse/components/pwa-install-banner";
 import RenderGlimmerContainer from "discourse/components/render-glimmer-container";
 import SidebarWrapper from "discourse/components/sidebar-wrapper";
 import SoftwareUpdatePrompt from "discourse/components/software-update-prompt";
-import TabBar from "discourse/components/tab-bar";
 import TopicEntrance from "discourse/components/topic-entrance";
 import WelcomeBanner from "discourse/components/welcome-banner";
 import DialogHolder from "discourse/dialog-holder/components/dialog-holder";
@@ -187,7 +186,7 @@ export default <template>
       </PluginOutlet>
     {{/if}}
 
-    <TabBar />
+    <PluginOutlet @name="below-site-wrapper" />
   </DiscourseRoot>
 
   <DMenus />

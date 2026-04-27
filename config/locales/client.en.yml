@@ -5698,12 +5698,6 @@ en:
       share: "Share"
       dismiss: "Dismiss"
 
-    tab_bar:
-      aria_label: "Main navigation"
-      forum: "Forum"
-      placeholder: "Top"
-      placeholder_content: "Coming soon..."
-
     safe_mode:
       enabled: "Safe mode is enabled, to exit safe mode close this browser window"
 
