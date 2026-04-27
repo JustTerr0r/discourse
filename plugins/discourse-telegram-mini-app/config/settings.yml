@@ -1,0 +1,9 @@
+discourse_telegram_mini_app:
+  enable_telegram_mini_app:
+    default: false
+    client: true
+    area: "authenticators"
+  telegram_bot_token:
+    default: ""
+    secret: true
+    area: "authenticators"

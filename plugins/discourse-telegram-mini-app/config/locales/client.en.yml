@@ -1,0 +1,7 @@
+en:
+  js:
+    tab_bar:
+      aria_label: "Main navigation"
+      forum: "Forum"
+      placeholder: "Top"
+      placeholder_content: "Coming soon..."

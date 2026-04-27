@@ -1,0 +1,7 @@
+ru:
+  js:
+    tab_bar:
+      aria_label: "Главная навигация"
+      forum: "Форум"
+      placeholder: "Топ"
+      placeholder_content: "Скоро..."
